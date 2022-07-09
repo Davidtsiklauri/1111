@@ -12,10 +12,10 @@ cd ./api && uvicorn server:app --reload --port=3000
 ```sh
 cd ./client && npm i && npm start
 ```
-
+#### 2)  OR  
 
 ```sh
- OR 
+ USER DOCKER 
 ```
 
 ```sh
