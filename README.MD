@@ -15,7 +15,7 @@ cd ./client && npm i && npm start
 #### 2)  OR  
 
 ```sh
- USER DOCKER 
+ USE DOCKER 
 ```
 
 ```sh
