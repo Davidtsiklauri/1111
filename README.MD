@@ -1,29 +1,25 @@
 #### 1)Clone Project
 
 ```sh
-git clone https://github.com/Davidtsiklauri/contacts.git
+git clone https://github.com/Davidtsiklauri/master-degree-project.git
 ```
 #### 2) CD 
 
 ```sh
-cd contacts
+cd ./api && uvicorn server:app --reload --port=3000
 ```
-
-#### 3) Install Dependencies
 
 ```sh
-npm run install-dependencies
+cd ./client && npm i && npm start
 ```
 
-#### 4) Run Back-End
 
 ```sh
-npm run start-backend
+ OR 
 ```
-
-#### 4) Open New Terminal And Run
 
 ```sh
-npm run start-front-end
+ docker-compose up
 ```
-
+   
+   
