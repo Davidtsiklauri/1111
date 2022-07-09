@@ -88,12 +88,12 @@ function App() {
           >
             <Row>
               <Col span={12}>
-                <Form.Item rules={getRequiredError()} name="latitude">
+                <Form.Item rules={getRequiredError()} name="lat">
                   <Input type='number' placeholder="განედი"/>
                 </Form.Item>
               </Col>
               <Col span={12}>
-                <Form.Item rules={getRequiredError()} name="longitude">
+                <Form.Item rules={getRequiredError()} name="long">
                   <Input type='number' placeholder="გრძედი" />
                 </Form.Item>
               </Col>

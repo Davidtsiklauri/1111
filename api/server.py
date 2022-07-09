@@ -20,8 +20,8 @@ app.add_middleware(
 
 
 class HouseInformation(BaseModel):
-  latitude: float
-  longitude: float
+  lat: float
+  long: float
   balcony: int 
   loggia: int 
   veranda: int 
@@ -57,7 +57,7 @@ class HousePricePredictor:
         }
 
     def __makePredictionModelFromObject(self, house: HouseInformation): 
-        predict_data = np.array([house.latitude,house.longitude,house.balcony,house.loggia,house.veranda,house.kitchen,house.numberOfFloors,house.floor,house.numberOfRooms,house.numberOfBedrooms,house.LotArea,house.ceilingHeight,house.numberOfBathrooms])
+        predict_data = np.array([house.lat,house.long,house.balcony,house.loggia,house.veranda,house.kitchen,house.numberOfFloors,house.floor,house.numberOfRooms,house.numberOfBedrooms,house.LotArea,house.ceilingHeight,house.numberOfBathrooms])
         return predict_data.reshape(1, -1)
 
 
