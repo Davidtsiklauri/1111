@@ -4,18 +4,14 @@ services:
   api:
     container_name: api
     image: api
-    build: 
-      context: .
-      dockerfile: ./api
+    build: ./api
     ports:
       - 3000:3000
 
   client:
     container_name: client
     image: client
-    build: 
-      context: .
-      dockerfile: ./client
+    build: ./client
     ports:
       - "3006:3006"
     depends_on: 
