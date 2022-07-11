@@ -18,11 +18,5 @@ cd ./client && npm i && npm start
  USE DOCKER 
 ```
 ```sh
- docker-compose build
+ docker-compose build && docker-compose up
 ```
-
-```sh
- docker-compose up
-```
-   
-   
